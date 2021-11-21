@@ -68,10 +68,8 @@ function admit(age,name) {
     if(isAnAdult(age)){
         return greet(name);
     }else{
-        if(yearsToAdulthood(age)===1){
+        if(yearsToAdulthood(age)<18){
             return `Please grow up first and then you can come back in -> ${yearsToAdulthood(age)} years when you're 18`;
-        } else {
-          return `Please grow up first and then you can come back in -> ${yearsToAdulthood(age)} years when you're 18`;
         }
       }
   }
